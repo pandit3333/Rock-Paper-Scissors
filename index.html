@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--This is main heading-->
+    <h1>Rock Paper Scissors Game</h1>
+
+    <!--This is the intructions for the game-->
+    <p>Please choose Rock, Paper, or Scissors to play against computer</p>
+
+    <!--This is buttons for rock, paper, and scissors with onclick events-->
+    <div class="buttons-container">
+        <button id="rock" onclick="playGame('Rock')"></button>
+        <button id="paper" onclick="playGame('Paper')"></button>
+        <button id="scissors" onclick="playGame('Scissors')"></button>
+    </div>
+
+    <!--Displaying the result-->
+    <div class="result" id="result"></div>
+
+    <!--This is reset button to lear results-->
+    <button class="reset-btn" onclick="resetGame()">Reset</button>
+
+    <!--This is link to javascript file-->
+    <script src="script.js"></script>
+</body>
+</html>
